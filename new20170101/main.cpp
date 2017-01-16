@@ -24,5 +24,10 @@ int main() {
     
     cout << b_search(a, 7, 6) + 1 << endl;
     
+    std::vector<boost::any> store_anything;
+    store_anything.push_back(A());
+    store_anything.push_back(B());
+    std::for_each(store_anything.begin(), store_anything.end(), print_any);
+    
     return 0;
 }

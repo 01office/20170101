@@ -7,3 +7,22 @@
 //
 
 #include "learnboost.hpp"
+
+void A::a_func()
+{
+    std::cout << "a function" << std::endl;
+}
+
+void B::b_func()
+{
+    std::cout << "b function" << std::endl;
+}
+
+void print_any(boost::any &m)
+{
+    if (A *pa = boost::any_cast<A>(&m)) {
+        pa->a_func();
+    } else if (B *pb = boost::any_cast<B>(&m)) {
+        pb->b_func();
+    }
+}

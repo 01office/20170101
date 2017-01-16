@@ -10,6 +10,22 @@
 #define learnboost_hpp
 
 #include <iostream>
+#include <vector>
+#include <string>
 #include <boost/any.hpp>
+
+class A
+{
+public:
+    void a_func();
+};
+
+class B
+{
+public:
+    void b_func();
+};
+
+void print_any(boost::any &m);
 
 #endif /* learnboost_hpp */
