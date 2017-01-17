@@ -27,6 +27,8 @@ int main() {
     std::vector<boost::any> store_anything;
     store_anything.push_back(A());
     store_anything.push_back(B());
+    store_anything.push_back(std::string("This is fantastic."));
+    store_anything.push_back(7);
     std::for_each(store_anything.begin(), store_anything.end(), print_any);
     
     return 0;

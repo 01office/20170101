@@ -24,5 +24,11 @@ void print_any(boost::any &m)
         pa->a_func();
     } else if (B *pb = boost::any_cast<B>(&m)) {
         pb->b_func();
+    } else {
+        try {
+            std::cout << boost::any_cast<std::string>(m) << std::endl;
+        } catch (boost::bad_any_cast&) {
+            std::cout << "Oops!" << std::endl;
+        }
     }
 }
