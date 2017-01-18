@@ -31,5 +31,11 @@ int main() {
     store_anything.push_back(7);
     std::for_each(store_anything.begin(), store_anything.end(), print_any);
     
+    pthread_t pt1, pt2;
+    pthread_create(&pt1, NULL, th1, NULL);
+    pthread_create(&pt2, NULL, th2, NULL);
+    pthread_join(pt1, NULL);
+    pthread_join(pt2, NULL);
+    
     return 0;
 }
