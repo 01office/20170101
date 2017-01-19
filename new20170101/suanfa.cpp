@@ -18,7 +18,7 @@ int b_search(int a[], int n, int v)
         if (v == a[middle]) {
             return middle;
         }
-        else if (v <= a[middle]) {
+        else if (v < a[middle]) {
             right = middle - 1;
         }
         else {
