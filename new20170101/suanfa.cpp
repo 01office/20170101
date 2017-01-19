@@ -56,3 +56,19 @@ void quick_sort(int a[], int left, int right)
         quick_sort(a, i + 1, right);
     }
 }
+
+
+__thread int i = 1;
+
+void *th1(void *arg)
+{
+    std::cout << ++i << std::endl;      // 2
+    return NULL;
+}
+
+void *th2(void *arg)
+{
+    sleep(2);                           // after th1
+    std::cout << ++i << std::endl;      // 2, not 3
+    return NULL;
+}
