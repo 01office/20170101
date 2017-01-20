@@ -20,4 +20,21 @@ void quick_sort(int a[], int left, int right);
 void *th1(void *arg);
 void *th2(void *arg);
 
+// construct tree via preorder and inorder list
+struct TreeNode
+{
+    int m_nValue;
+    TreeNode *m_pLeft;
+    TreeNode *m_pRight;
+};
+
+class ClassTree
+{
+public:
+    TreeNode *construct_tree(int *preOrder, int *inOrder, int length);
+    
+private:
+    TreeNode *consrtuct_tree_core(int *startPreOrder, int *endPreOrder, int *startInOrder, int *endInOrder);
+};
+
 #endif /* suanfa_hpp */
