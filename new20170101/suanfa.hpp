@@ -37,4 +37,14 @@ private:
     TreeNode *consrtuct_tree_core(int *startPreOrder, int *endPreOrder, int *startInOrder, int *endInOrder);
 };
 
+class MergeSort
+{
+public:
+    bool merge_sort(int a[], int n);
+    
+private:
+    void merge_sort(int a[], int first, int last, int temp[]);
+    void merge_sort(int a[], int first, int middle, int last, int temp[]);
+};
+
 #endif /* suanfa_hpp */
