@@ -72,3 +72,48 @@ void *th2(void *arg)
     std::cout << ++i << std::endl;      // 2, not 3
     return NULL;
 }
+
+bool MergeSort::merge_sort(int a[], int n)
+{
+    int first = 0, last = n - 1;
+    int *p = new int[n];
+    merge_sort(a, first, last, p);
+    delete []p;
+    return true;
+}
+
+void MergeSort::merge_sort(int a[], int first, int last, int tmp[])
+{
+    if (first < last) {
+        int middle = (first + ((last - first) >> 1));
+        merge_sort(a, first, middle, tmp);      // 左边有序
+        merge_sort(a, middle + 1, last, tmp);   // 右边有序
+        merge_sort(a, first, middle, last, tmp);
+    }
+}
+
+void MergeSort::merge_sort(int a[], int first, int middle, int last, int tmp[])
+{
+    int i = first, j = middle + 1, k = 0;
+    int m = middle, n = last;
+    
+    while (i < m && j < n) {
+        if (a[i] <= a[j]) {
+            tmp[k++] = a[i++];
+        } else {
+            tmp[k++] = a[j++];
+        }
+    }
+    
+    while (i < m) {
+        tmp[k++] = a[i++];
+    }
+    
+    while (j < n) {
+        tmp[k++] = a[j++];
+    }
+    
+    for (int i = 0; i < k; k++) {
+        a[first + i] = tmp[i];
+    }
+}
