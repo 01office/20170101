@@ -37,5 +37,8 @@ int main() {
     pthread_join(pt1, NULL);
     pthread_join(pt2, NULL);
     
+    MergeSort ms;
+    ms.merge_sort(a, 7);
+    
     return 0;
 }
