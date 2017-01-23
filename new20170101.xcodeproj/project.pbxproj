@@ -29,7 +29,7 @@
 		3C22F07B1E2D116700524D14 /* learnboost.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = learnboost.hpp; sourceTree = "<group>"; };
 		3CBCCF291E1A066200F91D8D /* new20170101 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = new20170101; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBCCF2C1E1A066200F91D8D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		3CBCCF331E1A068900F91D8D /* common_def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common_def.h; sourceTree = "<group>"; };
+		3CBCCF331E1A068900F91D8D /* common_def.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = common_def.hpp; sourceTree = "<group>"; };
 		3CBCCF341E1A077D00F91D8D /* suanfa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suanfa.cpp; sourceTree = "<group>"; };
 		3CBCCF351E1A077D00F91D8D /* suanfa.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = suanfa.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				3CBCCF2C1E1A066200F91D8D /* main.cpp */,
-				3CBCCF331E1A068900F91D8D /* common_def.h */,
+				3CBCCF331E1A068900F91D8D /* common_def.hpp */,
 				3CBCCF341E1A077D00F91D8D /* suanfa.cpp */,
 				3CBCCF351E1A077D00F91D8D /* suanfa.hpp */,
 				3C22F07A1E2D116700524D14 /* learnboost.cpp */,
