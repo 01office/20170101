@@ -16,4 +16,16 @@ private:\
     CLASS &operator= (const CLASS &);\
     static CLASS *m_pInstance;
 
+#define IMPLIMENT_SINGLETON(CLASS)\
+    CLASS *CLASS::m_pInstance = NULL;\
+    \
+    CLASS *CLASS::Instance()\
+    {\
+        if(m_pInstance == NULL)\
+        {\
+            m_pInstance = new CLASS;\
+        }\
+        return m_pInstance;\
+    }
+
 #endif /* common_def_h */
