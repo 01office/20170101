@@ -13,6 +13,8 @@
 #include <pthread.h>
 #include <unistd.h>
 
+#include "common_def.hpp"
+
 int b_search(int a[], int n, int v);
 
 void quick_sort(int a[], int left, int right);
