@@ -139,9 +139,7 @@ TreeNode *ClassTree::consrtuct_tree_core(int *startPreOrder, int *endPreOrder, i
     if (startPreOrder == endPreOrder) {
         if (*startPreOrder == *endPreOrder) {
             return root;
-        }// else {
-         //   throw std::exception("Invalid input.");
-        //}
+        }
     }
     
     int *rootInorder = startPreOrder;
