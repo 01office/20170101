@@ -59,7 +59,7 @@ void quick_sort(int a[], int left, int right)
 }
 
 
-__thread int i = 1;
+__thread int i = 1;     // __thread
 
 void *th1(void *arg)
 {
