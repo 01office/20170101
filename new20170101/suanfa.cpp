@@ -7,7 +7,6 @@
 //
 
 #include "suanfa.hpp"
-#include <stdexcept>
 
 int b_search(int a[], int n, int v)
 {
