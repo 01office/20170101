@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <queue>
 
 #include "suanfa.hpp"
 #include "learnboost.hpp"
@@ -39,6 +40,8 @@ int main() {
     
     MergeSort ms;
     ms.merge_sort(a, 7);
+    
+    priority_queue<int> pq;
     
     return 0;
 }
