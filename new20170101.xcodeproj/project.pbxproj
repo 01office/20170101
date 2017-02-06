@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0989671E48405D0054208F /* adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C0989651E48405D0054208F /* adapter.cpp */; };
 		3C22F07C1E2D116700524D14 /* learnboost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C22F07A1E2D116700524D14 /* learnboost.cpp */; };
 		3CBCCF2D1E1A066200F91D8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CBCCF2C1E1A066200F91D8D /* main.cpp */; };
 		3CBCCF361E1A077D00F91D8D /* suanfa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CBCCF341E1A077D00F91D8D /* suanfa.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C0989651E48405D0054208F /* adapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adapter.cpp; sourceTree = "<group>"; };
+		3C0989661E48405D0054208F /* adapter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = adapter.hpp; sourceTree = "<group>"; };
 		3C22F07A1E2D116700524D14 /* learnboost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = learnboost.cpp; sourceTree = "<group>"; };
 		3C22F07B1E2D116700524D14 /* learnboost.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = learnboost.hpp; sourceTree = "<group>"; };
 		3CBCCF291E1A066200F91D8D /* new20170101 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = new20170101; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +73,8 @@
 				3CBCCF351E1A077D00F91D8D /* suanfa.hpp */,
 				3C22F07A1E2D116700524D14 /* learnboost.cpp */,
 				3C22F07B1E2D116700524D14 /* learnboost.hpp */,
+				3C0989651E48405D0054208F /* adapter.cpp */,
+				3C0989661E48405D0054208F /* adapter.hpp */,
 			);
 			path = new20170101;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CBCCF2D1E1A066200F91D8D /* main.cpp in Sources */,
+				3C0989671E48405D0054208F /* adapter.cpp in Sources */,
 				3CBCCF361E1A077D00F91D8D /* suanfa.cpp in Sources */,
 				3C22F07C1E2D116700524D14 /* learnboost.cpp in Sources */,
 			);
