@@ -11,6 +11,7 @@
 
 #include "suanfa.hpp"
 #include "learnboost.hpp"
+#include "adapter.hpp"
 
 using namespace std;
 
@@ -42,6 +43,10 @@ int main() {
     ms.merge_sort(a, 7);
     
     priority_queue<int> pq;
+    
+    Adaptee *adpe = new Adaptee();
+    Target *tar = new Adapter(adpe);
+    tar->request();
     
     return 0;
 }
