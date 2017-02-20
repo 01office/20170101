@@ -159,3 +159,24 @@ TreeNode *ClassTree::consrtuct_tree_core(int *startPreOrder, int *endPreOrder, i
     
     return root;
 }
+
+ListNode *OperList::reverse_list(ListNode *head)
+{
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    
+    ListNode *pre, *cur, *nxt;
+    pre = head;
+    cur = head->next;
+    
+    while (cur) {
+        nxt = cur->next;
+        cur->next = pre;
+        pre = cur;
+        cur = nxt;
+    }
+    head = pre;
+    
+    return head;
+}

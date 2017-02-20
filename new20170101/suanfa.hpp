@@ -49,4 +49,17 @@ private:
     void merge_sort(int a[], int first, int middle, int last, int temp[]);
 };
 
+
+struct ListNode
+{
+    int value;
+    ListNode *next;
+};
+
+class OperList
+{
+public:
+    ListNode *reverse_list(ListNode *head);
+};
+
 #endif /* suanfa_hpp */
