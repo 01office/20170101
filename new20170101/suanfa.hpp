@@ -12,6 +12,7 @@
 #include <iostream>
 #include <pthread.h>
 #include <unistd.h>
+#include <stack>
 
 #include "common_def.hpp"
 
@@ -60,6 +61,19 @@ class OperList
 {
 public:
     ListNode *reverse_list(ListNode *head);
+};
+
+template <typename T> class CQueue {
+public:
+    CQueue();
+    ~CQueue();
+    
+    void appendTail(const T& node);
+    T deleteHead();
+    
+private:
+    std::stack<T> stack1;
+    std::stack<T> stack2;
 };
 
 #endif /* suanfa_hpp */

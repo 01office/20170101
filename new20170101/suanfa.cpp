@@ -180,3 +180,23 @@ ListNode *OperList::reverse_list(ListNode *head)
     
     return head;
 }
+
+template <typename T> void CQueue<T>::appendTail(const T &node) {
+    stack1.push(node);
+};
+
+template <typename T> T CQueue<T>::deleteHead() {
+    if (stack2.size() <= 0) {
+        while (stack1.size() > 0) {
+            T &data = stack1.top();
+            stack1.pop();
+            stack2.push(data);
+        }
+    }
+    
+    if (stack2.size() > 0) {
+        T head = stack2.top();
+        stack2.pop();
+        return head;
+    }
+}
